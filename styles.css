@@ -1,0 +1,98 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main Container */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Product List Styles */
+  section ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    justify-content: space-around;
+  }
+  
+  /* Product Card */
+  section ul li {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: 250px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  section ul li:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Image Container */
+  .image-container {
+    width: 100%;
+    height: 200px; /* Fixed height for consistent sizing */
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  /* Product Image */
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the entire image fits within the container */
+  }
+  
+  /* Product Title */
+  section ul li h1 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  /* Product Description */
+  section ul li p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  /* Product Price */
+  section ul li p:last-of-type {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+  }
+  
+  /* Add to Cart Button */
+  section ul li button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    font-size: 0.9em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: auto;
+  }
+  
+  section ul li button:hover {
+    background-color: #218838;
+  }
+  
